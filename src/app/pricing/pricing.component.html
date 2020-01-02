@@ -1,1 +1,17 @@
-<p>pricing works!</p>
+<h1>count: {{count}}</h1>
+<div class="container">
+<div class="card-deck">
+<div class="row">
+<div *ngFor="let usr of users['arr']">
+    <div class="card" style="width: 20rem;">
+        <img src="{{usr.avatar}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{usr.first_name}}</h5>
+          <p class="card-text">{{usr.email}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+      </div>
+</div>
+</div>
+</div>
